@@ -1,0 +1,619 @@
+<html>
+<link rel="stylesheet" href="../indexcss.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Russo+One|Abel" rel="stylesheet">
+<head>
+    	<style>
+	@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Roboto+Condensed');
+        
+.head-style-1 {
+  text-align: center;
+    position: relative;
+  line-height: ;
+  font-family: 'Abel', sans-serif;
+    font-size: 70px;
+    color: #333;
+}
+
+.head-style-1::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:transparent;
+   
+}
+
+.head-style-1::after {
+  content: "";
+  position: absolute;
+  width: 28%;
+  height: 2px;
+  top: auto;
+  left: 36%;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+    transform: rotateY(90deg);
+    transition: 0.25s linear;
+
+    
+}
+
+.head-style-1:hover::after {
+    transform: rotate(0deg);
+  
+}
+
+            #report {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+            .head-style-2 {
+  margin-left: 0;
+  position: relative;
+  line-height: ;
+  font-family: 'Abel', sans-serif;
+    font-size: 60px;
+    color: #333;
+}
+
+.head-style-2::before {
+  content: "";
+  position: absolute;
+  width: 26%;
+  height: 1px;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:transparent;
+}
+
+.head-style-2::after {
+  content: "";
+  position: absolute;
+  width: 3%;
+  height: 2px;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+.head-style-2:hover::after {
+  width: 26%;
+}
+
+#modal,#news ,#intro,#winner,#fast,#test,#vision,#america,#share,#semi{
+  left: 50%;
+  margin: -250px 0 0 -32%;
+  opacity: 0;
+  position: absolute;
+  top: -50%;
+  visibility: hidden;
+  width: 65%;
+  box-shadow: 0 3px 7px rgba(0,0,0,.25);
+  box-sizing: border-box;
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out
+}
+
+#modal:target , #news:target ,#intro:target, #winner:target,#fast:target,#test:target,#vision:target,#america:target,#share:target,#semi:target{
+  opacity: 1;
+  top: 40%;
+  visibility: visible
+}
+
+ #modal .footer,#news.footer,#intro.footer,#winner.footer.#fast.footer,#test.footer,#vision.footer,#america.footer,#share.footer,#semi.footer{
+  border-bottom: 1px solid #1ABC9C;
+  border-radius: 5px 5px 0 0
+}
+
+#modal .footer,#news.footer,#intro.footer,#winner.footer,#fast.footer,#test.footer,#vision.footer,#america.footer,#share.footer,#semi.footer{
+  border: none;
+  border-top: 1px solid #e7e7e7;
+  border-radius: 0 0 5px 5px
+}
+
+#modal h2,#news h2, #intro h2, #winner h2 ,#fast h2,#test h2,#vision h2,#america h2,#share h2,#semi h2{
+  margin: 0;
+  color: #fff
+}
+
+#modal .btn , #news.btn , #intro.btn, #winner.btn,#fast.btn,#test.btn,#vision.btn,#america.btn,#share.btn,#semi.btn{ float: right }
+
+#modal .copy, #modal .header, #modal .footer ,#news. copy, #news. header ,#news.footer ,#intro.copy , #intro.header , #intro.footer,#winner.copy , #winner.header , #winer.footer,#fast.copy,#fast.header,#fast.footer,#test.copy,#test.header.#test.footer,#vision.copy,#vision.header,#vision.footer,#america.copy,#america.header,#america.footer,#share.copy,#share.footer,#share.header,#semi.copy,#semi.header,#semi.footer{
+  padding: 10px;
+  color: #fff
+}
+
+.modal-content ,.news-content, .intro-content,.winner-content,.fast-content,.test-content,.vision-content,.america-content,.share-content,.semi-content{
+  background: #fff;
+  position: relative;
+  z-index: 20;
+  border-radius: 5px;
+  color: #333
+}
+
+#modal .copy ,#news.copy,#intro.copy,#winner.copy,#fast.copy,#test.copy,#vision.copy,#america.copy,#semi.copy
+            {
+                background: #fff; color:#333 ; font-family: 'Abel' , sans-serif; font-size: 1.2em;
+            }
+
+#modal .overlay , #news.overlay , #intro.overlay, #winner.overlay,#fast.overlay,#test.overlay,#vision.overlay,#america.overlay,#share.overlay,,#semi.overlay{
+  background-color: #000;
+  background: rgba(0,0,0,.8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10
+}
+
+.copy a { color: #fff;   display: inline-block;
+  padding: 5px 10px; border-radius: 5px;
+  background-color: #333;
+}
+
+            #panel:hover{
+               
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+                
+            }
+
+
+            
+	</style>
+    
+	</head>
+
+	<body>
+
+		<div id="navbar">
+	<a href="../index.html"><div id="logo"><img src="../images/unnamed.png" id="logo-image"></div></a>
+	<div id="links">
+		<a href="How it works.html"><div  style="font-family: 'Barlow Semi Condensed', sans-serif; font-size: 20px; position: absolute; right: 400px; width: 150px;">How It Works</div></a>
+		<a href="press.html"><div  style="font-family: 'Barlow Semi Condensed', sans-serif; font-size: 20px; position: absolute; right: 235px;width: 150px;">Press</div></a>
+		<a href="routes.html"><div  style="font-family: 'Barlow Semi Condensed', sans-serif; font-size: 20px; position: absolute; right: 215px;">Routes</div></a>
+		<a href="team.html"><div  style="font-family: 'Barlow Semi Condensed', sans-serif; font-size: 20px; position: absolute; right: 100px;">Team</div></a>
+		<a href="media gallery.html"><div  style="font-family: 'Barlow Semi Condensed', sans-serif; font-size: 20px; position: absolute; right: 0;" >Media</div></a>
+	</div>
+</div>
+
+
+<h1 class="head-style-1" style="padding-top: 15vh;">Press Releases</h1>
+
+
+<div style="margin-top: 70px;">
+    
+<div style="width: 25%; position: absolute; right: 6.25%; ">
+    <a href="#modal" style="text-decoration: none;"><div style="width: 100%; " id="panel">
+        <img src="../images/press/Virgin_Hyperloop_One_Building_Network_India.jpg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Virgin Hyperloop One signs MOU in India with the Government of Maharashtra to conduct its Preliminary Study</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;">Virgin Hyperloop One today announced its partnership with the Government of Maharashtra with an intent to conduct a preliminary study in the region. The US-based company signed a Memorandum of Understanding (MoU) with the Pune Metropolitan Region Development Authority (PMRDA) to identify potential routes and analyze the high-level economic impact........</p>
+        </div></a>
+    
+    <a href="#news" style="text-decoration: none;"><div style="width: 100%;  margin-top: 30px;" id="panel">
+	<img src="../images/press/14376-thumb-720x340.jpg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Virgin Hyperloop One Appoints New Co-Executive Chairman And Vice Chairman To Board Of Directors</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;">Following a strategic partnership with the Virgin Group, Virgin Hyperloop One, the only company in the world that has built and successfully tested a full-scale Hyperloop system, today announced the appointments of a new Co-Executive Chairman, Ziyavudin Magomedov, Chairman of the Summa Group, and Vice Chairman......</p>
+        </div></a>
+    
+    <a href="#semi" style="text-decoration: none;"><div style="width: 100%;  margin-top: 30px;" id="panel">
+	<img src="../images/press/hyperloop-one-routes-that-will-be-investigated-for-viability-announced-by-the-company-on-thursday.jpeg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Hyperloop One and Indian Government Officials Lead First-Ever Summit to Discuss India’s Most Promising Hyperloop Routes</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;">Hyperloop One, the global leader in developing the world’s first operational Hyperloop, convened a landmark innovation summit – The Hyperloop One Vision For India in New Delhi today. The summit, which was graced by Shri Suresh Prabhu, Hon’ble Minister of Railways and Shri Amitabh Kant, CEO, NITI Aayog, discussed how Hyperloop One can .......</p>
+        </div></a>
+
+</div>    
+    
+ <div style="width: 25%; position: absolute; right: 37.5%; " >   
+ 	<a href="#winner" style="text-decoration: none"><div style="width: 100%;  margin-top: 0px;" id="panel">
+	<img src="../images/press/hyperloop-one-routes-that-will-be-investigated-for-viability-announced-by-the-company-on-thursday.jpeg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">  Hyperloop One Announces 10 Winners for Hyperloop One Global Challenge</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;"> Hyperloop One, the only company in the world that has built a full-scale Hyperloop system, today announced the winners.......</p>
+        </div></a>
+      <a href="#fast" style="text-decoration: none"><div style="width: 100%;  margin-top: 30px;" id="panel">
+	<img src="../images/press/Hyper-Loop-1.jpg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Hyperloop One Goes Farther and Faster Achieving Historic Speeds</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;">As the only company in the world that has built an operational Hyperloop system, Hyperloop One continues......</p>
+          </div></a>
+      <a href="#test" style="text-decoration: none"><div style="width: 100%;  margin-top: 30px;" id="panel">
+	<img src="../images/press/image_01_1.jpg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Hyperloop One Makes History with World's First Successful Hyperloop Full Systems Test</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;">Hyperloop One today announced the successful completion of the world's first full systems........</p>
+          </div></a>
+     <a href="#intro" style="text-decoration: none;"><div style="width: 100%;  margin-top: 30px;" id="panel">
+	<img src="../images/press/Virgin_Hyperloop_One_Appoints_New-02a63abe9364320020de413bfd395021.jpg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;"> Introducing Virgin Hyperloop One </h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;"> Hyperloop One, the only company in the world that has built a full-scale Hyperloop system, today announced that the Virgin Group has invested in the company......</p>
+        </div></a>
+</div>
+
+<div style="width: 25%;  margin-left: 6.25%; " >
+   <a href="#vision" style="text-decoration: none;"><div style="width: 100%" id="panel">
+	<img src="../images/press/final infographic.png" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Hyperloop One's Vision for Europe Summit: Unveiling 9 Routes Spanning the Continent as Part of its Global Challenge</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px; text-align: left;">Executives from Hyperloop One joined European dignitaries and policymakers today at its Vision for Europe summit to discuss transforming transportation across the continent with Hyperloop. Hyperloop One's vision for Europe creates economic unification to......</p>
+       </div> </a>
+
+<a href="#america" style="text-decoration: none"><div style="width: 100%;  margin-top: 30px;" id="panel">
+	<img src="../images/press/lol.jpg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Hyperloop One Unveils its Vision for America, Details 11 Routes as Part of Global Challenge</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;">Executives from Hyperloop One joined leading policymakers and transportation experts here today to reveal details of select Hyperloop routes in the United States and to initiate a nationwide conversation about the future......</p>
+</div>
+    </a> 
+<a href="#share" style="text-decoration: none"><div style="width: 100%;  margin-top: 30px;" id="panel">
+	<img src="../images/press/hyperloop-one-1200-1024x585.jpg" width="98%" style="padding: 1%;">
+	<h2 style=" font-family: 'Abel', sans-serif; color: #333; font-size: 20px; padding: 0 15 0 15;">Hyperloop One Shares Transformative Vision for the Future of Manufacturing</h2>
+		<p style="font-family: 'Abel', sans-serif; padding: 15px;  color: #333; margin-top: -25px;">Hyperloop One, the global leader in developing the world’s first operational Hyperloop, is set to empower manufacturing and its adjacent sectors with the potential for increased value creation, faster lead times and lower costs when compared to traditional alternatives. Terrific momentum has driven the project’s development, with new images recently revealed demonstrating......</p>
+</div>
+    </a>  
+    
+</div>
+
+</div>
+
+<div id="modal">
+  <div class="modal-content" style="padding:25;">
+    <div class="copy">
+        <h1 class="head-style-2" >NOV 16 2017</h1>
+        <h2 style="color: #333">Virgin Hyperloop One signs MOU in India with the Government of Maharashtra to conduct its Preliminary Study</h2>
+       <p>
+      Mumbai, India, November 16, 2017— Virgin Hyperloop One today announced its partnership with the Government of Maharashtra with an intent to conduct a preliminary study in the region. The US-based company signed a Memorandum of Understanding (MoU) with the Pune Metropolitan Region Development Authority (PMRDA) to identify potential routes and analyze the high-level economic impact and technical viability of hyperloop transportation solutions in India.
+    </p>
+    <p>
+      Virgin Hyperloop One will work with its partners in the region and the PMRDA will help navigate the regulatory requirements and support the report with data. The preliminary study is intended to analyse the applicability and benefits of hyperloop technology, identify high priority routes within the State based on demand analysis and socio-economic benefits, and inform the Government of Maharashtra in any future decision to progress to the full project stage.
+    </p>
+    <p>
+      Virgin Hyperloop One will improve economic competitiveness, reduce congestion and emissions, and provide citizens with greater social and economic mobility. As it is the only company in the world that has built and successfully tested a full-scale hyperloop system, there is a growing demand for a hyperloop from governments and the private sectors around the world. Apart from India, Virgin Hyperloop One is working on projects in countries like the UAE, U.S., Canada, Finland, and the Netherlands.
+    </p>
+    <p>
+      “A hyperloop route requires high-density traffic to become viable as a means of rapid public transit. Mumbai and Pune, the most and seventh most populous cities in India respectively, have the potential to provide an optimal route with a high density,” said Hon. Chief Minister of Maharashtra, Shri. Devendra Fadnavis. “By reducing travel time to under 20 minutes, a hyperloop route will help intensify the connectivity between the metropolitan regions of Pune and Mumbai, transforming the two cities into India’s first and largest Megapolis,” he added.
+    </p>
+    <p>
+      Looking at the present traffic scenario in Mumbai, Virgin Hyperloop One can reinvent and transform transportation in Maharashtra as it redefines speed with minimal time consumption. A hyperloop solution could revolutionize the transport experience. For example:
+    </p>
+    <p>
+      <ul>
+        <li>It would take just 14-minutes to travel between Mumbai and the fast-growing city of Pune, a journey that currently takes up to 3 hours by car</li>
+        <li>It could also streamline airport connectivity, such as connecting Pune’s new Purandar Airport to the city center or Navi Mumbai International Airport to Chhatrapati Shivaji International Airport</li>
+        <li>
+          It could look at connecting Nagpur, which is in the easternmost part of Maharashtra, with Mumbai and Pune to vastly improve passenger and freight transportation
+        </li>
+    </ul>
+    </p>
+    <p>
+     “To coincide with the Digital India initiative and the pivotal role that technology will play in it, Virgin Hyperloop One can be a key facilitator,” said Nick Earle, SVP Global Field Operations, Virgin Hyperloop One. “India has a proud track record of technological advancement by leapfrogging legacy solutions as illustrated by the successful national roll out of 3G and 4G networks. Hyperloop represents a leapfrog opportunity which will enable a dramatic reimagining of the complete transportation system,” he added. 
+  </p>
+  <p>
+    India has been facing major transportation challenges. According to the Ministry of Road Transport and Highways, 65% of India’s freight is transported on the country’s strained and congested road networks. With speeds 2-3 times faster than high-speed rail, and being fully autonomous, hyperloop technology can deliver a 300-km commute in under 20 minutes and address many of these issues.
+  </p>
+  <p>
+    "This preliminary study will help the Government of Maharashtra provide its citizens with a cleaner, safer, and faster mode of transportation,” said Harj Dhaliwal, Managing Director, Middle East & India, Virgin Hyperloop One. “Virgin Hyperloop One is the only company in the world that has successfully built and tested the first full-scale hyperloop system. With this report, the Government of Maharashtra will be able to identify viable routes that link commercial and knowledge hubs dispersed throughout the region with greater mobility and unparalleled efficiency,” he added.
+  </p>
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+<div id="news">
+  <div class="news-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >OCT 18 2017</h1>
+        <h2 style="color: #333">Virgin Hyperloop One Appoints New Co-Executive Chairman And Vice Chairman To Board Of Directors</h2>
+       <p>
+           <b>NEW YORK, Oct. 18, 2017:</b> Following a strategic partnership with the Virgin Group, Virgin Hyperloop One, the only company in the world that has built and successfully tested a full-scale Hyperloop system, today announced the appointments of a new Co-Executive Chairman, Ziyavudin Magomedov, Chairman of the Summa Group, and Vice Chairman, Jim Rosenthal, the former COO of Morgan Stanley, to its board of directors.
+    </p>
+    <p>
+      "We're privileged to have Ziyavudin appointed as Co-Executive Chairman and Jim join as Vice Chairman of the board of directors of Virgin Hyperloop One," said Shervin Pishevar, co-founder and Co-Executive Chairman of Virgin Hyperloop One. "In addition to Richard Branson joining the board, we have attracted and commanded the greatest minds to guide us as we position ourselves for global growth. Their proven leadership in their respective industries adds another dimension in helping us achieve our dream of bringing Virgin Hyperloop One technology to the world."
+    </p>
+    <p>
+      As the Chairman of The Summa Group, a diversified private holding company with significant global investments in port logistics, engineering, construction, telecommunications, innovative technologies and the oil and gas sectors, Mr. Magomedov brings his vast expertise in logistics and infrastructure, which will be beneficial as Virgin Hyperloop One works with government and private sector partners to build out its freight and shipping capabilities. The Summa Group employs more than 25,000 people in almost 40 regions of Russia and abroad. Mr. Magomedov's Caspian VC Partners fund has been a strategic and early investor in Virgin Hyperloop One. He will share responsibilities with Shervin Pishevar as they lead the board as co-chairmen.
+    </p>
+    <p>
+      Mr. Rosenthal brings his extensive experience in the financial sector, funding high growth companies, establishing solid governance and security policies. As the former COO of Morgan Stanley, Jim will help guide the company as it enters the commercialization phase of its product development. He is currently the co-founder and CEO of BlueteamGlobal, a cyber security company.
+    </p>
+    <p>
+     "I am honored to be named Co-Executive Chairman of the board alongside Shervin," said Ziyavudin Magomedov. "As an early investor in Virgin Hyperloop One, I am impressed by the progress the company has achieved in such a short timeframe to design and build the technology and make Hyperloop real. Virgin Hyperloop One will create new opportunities in shipping and supply chain distribution while driving significant value for a variety of industries that reinvents transportation as we know it. I can visualize a next generation Silk Road connecting the world with Virgin Hyperloop One technology."
+    </p>
+    <p>
+      "Both Ziyavudin and Jim join a board increasingly focused on global commercialization," said Rob Lloyd, CEO of Virgin Hyperloop One. "They join DP World Chairman HE Sultan Ahmed bin Sulayem on our global board. DP World was an important early investor, and Sultan has been a passionate advocate for our business since DP World's first investment. He continues to help us cultivate relationships in the Middle East and in India. All three Directors bring tremendous value in terms of international business and government relationships and experience in scaling a global business."
+    </p>
+    <p>
+     Last week, Virgin Hyperloop One announced a global strategic partnership with the Virgin Group to focus on passenger and mixed-use cargo service in addition to the creation of a new passenger division. Depending on the market, other brands could be used globally as well. Following the successful test at its "DevLoop" test track in Nevada this past summer, Virgin Hyperloop One continues to see a growing demand from governments and the private sector around the world with projects underway in the UAE, U.S., Canada, Finland, the Netherlands and India.
+  </p>
+  <p>
+    With Virgin Hyperloop One, passengers and cargo are loaded into a pod, and accelerate gradually via electric propulsion through a low-pressure tube. The pod quickly lifts above the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag. Virgin Hyperloop One's radically efficient and clean, all-electric technology is aligned with the Virgin Group's purpose-driven mission to deliver more sustainable modes of transportation.
+  </p>
+  
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+
+<div id="intro">
+  <div class="intro-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >OCT 12 2017</h1>
+        <h2 style="color: #333">Introducing Virgin Hyperloop One</h2>
+       <p>
+           <b>NEW YORK, Oct. 12, 2017:</b>  Hyperloop One, the only company in the world that has built a full-scale Hyperloop system, today announced that the Virgin Group has invested in the company to form a global strategic partnership. With this partnership, Richard Branson joined the board of directors and Hyperloop One will rebrand itself as Virgin Hyperloop One in the coming months.
+    </p>
+    <p>
+      “For more than 20 years, Richard and Virgin have been at the forefront of transportation innovation, and a partnership with them feels like a natural fit,” said Shervin Pishevar, co-founder and Executive Chairman of Hyperloop One. “Virgin is an iconic brand and having Richard as an ally will help strengthen our mission to spread Hyperloop One throughout the world. Josh and I could not think of a better person or brand to be our true partner in our continued quest to make our moonshot idea a reality. Onwards.”
+    </p>
+    <p>
+      “After visiting Hyperloop One’s test site in Nevada and meeting its leadership team this past summer, I am convinced this groundbreaking technology will change transportation as we know it and dramatically cut journey times,” said Richard Branson, founder of the Virgin Group. “Virgin has been known for investing in and creating innovative companies over the years, and I look forward to making history together as we bring Hyperloop to the world as Virgin Hyperloop One.”
+    </p>
+    <p>
+     This global strategic partnership will focus on passenger and mixed-use cargo service in addition to the creation of a new passenger division. Depending on the market, other brands could be used globally as well. Following the successful test at its Nevada test track “DevLoop” this past summer, Hyperloop One continues to see a growing demand from governments and the private sector around the world with projects underway in the UAE, U.S., Canada, Finland, the Netherlands and India.
+    </p>
+    <p>
+      With Hyperloop One, passengers and cargo are loaded into a pod, and accelerate gradually via electric propulsion through a low-pressure tube. The pod quickly lifts above the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag. Hyperloop One’s radically efficient and clean, all-electric technology is aligned with the Virgin Group’s purpose-driven mission to deliver more sustainable modes of transportation.
+    </p>
+    <p>
+      “We’ve focused on developing the technology required to make Hyperloop a reality and demonstrated that it works,” said Josh Giegel, co-founder and President of Engineering of Hyperloop One. “The combination of our proven technology and Virgin’s expertise in transportation, operations, safety and passenger experience will accelerate the commercialization phase of our company’s development. Together with Virgin, we will not only transform how we live, we will rethink how it feels to travel by creating a passenger experience that people will enjoy and look forward to riding. Our goal is to make travel fun again.”
+    </p>
+    
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+<div id="winner">
+  <div class="winner-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >SEP 14 2017</h1>
+        <h2 style="color: #333">Hyperloop One Announces 10 Winners for Hyperloop One Global Challenge</h2>
+       <p>
+           <b>LOS ANGELES, CA - September 14, 2017:</b>   Hyperloop One, the only company in the world that has built a full-scale Hyperloop system, today announced the winners of its Hyperloop One Global Challenge to identify the strongest new Hyperloop routes in the world. Following a close assessment of the proposals by a panel of experts in infrastructure, technology and transportation, ten teams from five countries were chosen from among hundreds of applicants. Hyperloop One will commit meaningful business and engineering resources and work closely with each of the winning teams/routes to determine their commercial viability. Additionally, as a direct result of the Global Challenge, Hyperloop One and the Colorado Department of Transportation (CDOT), with support from AECOM, will enter a public private partnership to begin a feasibility study in Colorado.
+    </p>
+    <p>
+      “The Hyperloop One Global Challenge started as a call to action for innovators, engineers, trailblazers and dreamers around the world who shared our vision of creating a new mode of transportation,” said Shervin Pishevar, co-founder and Executive Chairman of Hyperloop One. “The Global Challenge became a movement of thousands of people from more than 100 countries over six continents. Like us, they believe that Hyperloop will not only solve transportation and urban development challenges within communities, it will unlock vast economic potential and transform how our cities operate and how we live. Our successful test this summer made Hyperloop a reality, and now we’re ready to bring our Hyperloop system to the world.”
+    </p>
+    <p>
+      Hyperloop One will now work closely with each winning team to validate and analyze their proposals further, and provide initial ridership forecasts, business case and preliminary technical analysis of the route and corridor, tailored to the needs of the individual route. Hyperloop One’s business and technical leaders will host in-country workshops with each team, and connect them with Hyperloop One’s global partner network to sharpen the feasibility and scope of the potential routes. Another 11 finalist teams will continue to develop their proposals with the support of Hyperloop One.
+    </p>
+    <p>
+     The Hyperloop One Global Challenge kicked off in May 2016 as an open call to individuals, universities, companies and governments to develop comprehensive proposals for deploying Hyperloop One's innovative transportation technology in their region. The winning teams/routes were chosen based on specific criteria including well-defined routes and implementation strategies, key stakeholder involvement from public and private sectors, compelling business cases, and innovative and creative applications of a Hyperloop system.
+    </p>
+    <p>
+      “The excitement around Hyperloop is in its potential to reimagine transportation by eliminating the barriers of distance and time,” said Michael S. Burke, AECOM’s chairman and chief executive officer. “That half of the winning teams are supported by AECOM demonstrates the power of our connected expertise and is further evidence that these are the kinds of problems AECOM is built to take on and solve. We’re excited to be part of Hyperloop One’s efforts to create impactful use cases for a technology that can transform what it means to get from point A to B anywhere in the world.”
+    </p>
+    <p>
+      Hyperloop One and the Colorado Department of Transportation, supported by AECOM, will enter into a public-private partnership that will begin a feasibility study that examines transportation demand, economic benefits, proposed routes and potential strategies, regulatory environments and alignment with overall CDOT high-speed travel, rail and freight plans.
+    </p>
+        <p>
+        “The results of the Hyperloop One Global Challenge far exceeded our expectations,” said Rob Lloyd, CEO of Hyperloop One. “We had tremendous interest in this competition, and these ten teams each had their unique strengths in showcasing how they will alleviate serious transportation issues in their regions. We’re also excited about the partnership with CDOT and AECOM, which was a direct result of the Global Challenge and a testament to the power of open innovation. This is unprecedented and demonstrates how quickly the public-private sectors can partner to make Hyperloop systems a reality around the world. Studies like this bring us closer to our goal of implementing three full-scale systems operating by 2021.”
+        </p>
+        <p>
+        "We are excited​ to partner with Hyperloop One in exploring the next step of feasibility of this innovative technology, potentially transforming how Colorado moves," said Shailen Bhatt, Executive Director of the Colorado Department of Transportation. "The Hyperloop technology could directly align with our goals of improving mobility and safety in Colorado, and we have been encouraged by the continued progress the technology is taking."
+        </p>
+        <p>
+        With Hyperloop One, passengers and cargo are loaded into a pod, and accelerate gradually via electric propulsion through a low-pressure tube. The pod quickly lifts above the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag. The company made history this summer with the successful completion of the world’s first-full scale Hyperloop test, achieving record test speeds.
+        </p>
+        <p>
+        “The winning teams of the Hyperloop One Global Challenge represent the best innovation and creativity from government agencies, engineering firms, academics, infrastructure experts and more,” said Josh Giegel, co-founder and President of Engineering of Hyperloop One. “We’re encouraged by these compelling projects that aim to increase passenger mobility, connect urban centers, reimagine trade and cargo and enhance quality of life. We look forward to working closely with all the winners, their partners and local authorities to examine the feasibility and scope of these routes and, ultimately, build the first Hyperloop routes around the world. We’re also excited to share that we’ll be hosting the world’s first Global Summit around Hyperloop One technology in early 2018 that will bring together all of our government and industry partners and really kick off the growth of our hardware and software platforms.”
+        </p>
+    
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+<div id="fast">
+  <div class="fast-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >AUG 02 2017</h1>
+        <h2 style="color: #333">Hyperloop One Goes Farther and Faster Achieving Historic Speeds</h2>
+       <p>
+           <b>New York, August 2, 2017:</b>   As the only company in the world that has built an operational Hyperloop system, Hyperloop One continues to make history with the successful completion of its second phase of testing. On July 29, 2017, Hyperloop One completed Phase 2, achieving historic test speeds traveling nearly the full distance of the 500-meter DevLoop track in the Nevada desert. The Hyperloop One XP-1, the company’s first-generation pod, accelerated for 300 meters and glided above the track using magnetic levitation before braking and coming to a gradual stop.
+    </p>
+    <p>
+      “This is the beginning, and the dawn of a new era of transportation,” said Shervin Pishevar, Executive Chairman and Co-founder of Hyperloop One. “We’ve reached historic speeds of 310 km an hour, and we’re excited to finally show the world the XP-1 going into the Hyperloop One tube. When you hear the sound of the Hyperloop One, you hear the sound of the future.”
+    </p>
+    <p>
+      During phase 2, Hyperloop One achieved record speeds, in a tube depressurized down to the equivalent of air at 200,000 feet above sea level. All components of the system were successfully tested, including the highly efficient electric motor, advanced controls and power electronics, custom magnetic levitation and guidance, pod suspension and vacuum system. With Hyperloop One, passengers and cargo are loaded into a pod, and accelerate gradually via electric propulsion through a low-pressure tube. The pod quickly lifts above the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag.
+    </p>
+    <p>
+     “We’ve proven that our technology works, and we’re now ready to enter into discussions with partners, customers and governments around the world about the full commercialization of our Hyperloop technology,” said Hyperloop One CEO Rob Lloyd. “We’re excited about the prospects and the reception we’ve received from governments around the world to help solve their mass transportation and infrastructure challenges.”
+    </p>
+    <p>
+      “Our team of engineers continues to make history at DevLoop. Only a handful of teams would have attempted something so audacious while far less could have achieved it,” said Josh Giegel, President of Engineering and Co-founder of Hyperloop One. “Through tireless preparation, dedication and hard work, we successfully completed Phase 1, proving that Hyperloop One technology works and that Hyperloop is real. Phase 2 was far more difficult as we built upon everything we learned from our initial test and accomplished faster speeds at a farther distance. We’re now one step closer to deploying Hyperloop around the world.”
+        
+    </p>
+    
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+
+<div id="test">
+  <div class="test-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >JUL 12 2017</h1>
+        <h2 style="color: #333">Hyperloop One Makes History with World's First Successful Hyperloop Full Systems Test</h2>
+       <p>
+           <b>NEW YORK, July 12, 2017: </b> Hyperloop One today announced the successful completion of the world's first full systems Hyperloop test in a vacuum environment. This test was Phase 1 of a multi-Phase program and was privately conducted on May 12, 2017 at the company's test track, "DevLoop," in the Nevada Desert. The vehicle coasted above the first portion of the track for 5.3 seconds using magnetic levitation and reached nearly 2Gs of acceleration, while achieving the Phase 1 target speed of 70mph. The company is now entering the next campaign of testing, which will target speeds of 250 mph.
+    </p>
+    <p>
+      "Hyperloop One has accomplished what no one has done before by successfully testing the first full scale Hyperloop system. By achieving full vacuum, we essentially invented our own sky in a tube, as if you're flying at 200,000 feet in the air," said Shervin Pishevar, co-founder and Executive Chairman of Hyperloop One. "For the first time in over 100 years, a new mode of transportation has been introduced. Hyperloop is real, and it's here now."
+    </p>
+    <p>
+      In this historic moment, Hyperloop One tested all the system's components, including its highly efficient motor, vehicle suspension, magnetic levitation, electromagnetic braking, vacuum pumping system and more, proving the full system's components operate successfully as a single integrated unit in a vacuum. Nearly 200 engineers, fabricators, welders, etc. dedicated thousands of hours to make this test successful.
+    </p>
+    <p>
+      In addition to announcing the private test, Hyperloop One also unveiled the prototype of its Pod that will work within the integrated system. Using electromagnetic propulsion and magnetic levitation, the Pod will transport passengers and cargo inside the tube. Hyperloop One's Pod is the only vehicle in the world that, with the company's proprietary linear electric motor, achieves autonomous high-speed propulsion and levitation in a controlled low-pressure environment. Made of structural aluminum and a lightweight carbon fiber, the shell measures 28 feet long.
+    </p>
+    <p>
+     Hyperloop One will continue to run tests at DevLoop in the coming months to validate its next-generation components and software. The next phase of testing will showcase the Pod gliding along a longer track at faster speeds.
+    </p>
+    <p>
+      "Our team is the only team that is actually making Hyperloop happen, and we've spent more time testing a Hyperloop system than anyone in the world," said Josh Giegel, co-founder and President of Engineering of Hyperloop One. "To make Hyperloop a reality, we built and tested the actual hardware, gathering valuable insight along the way. Now that we've tested our Hyperloop system, we know it works, and we're ready to deploy it to the rest of the world."
+    </p>
+    <p>
+    "Our team is the only team that is actually making Hyperloop happen, and we've spent more time testing a Hyperloop system than anyone in the world," said Josh Giegel, co-founder and President of Engineering of Hyperloop One. "To make Hyperloop a reality, we built and tested the actual hardware, gathering valuable insight along the way. Now that we've tested our Hyperloop system, we know it works, and we're ready to deploy it to the rest of the world."
+  </p>
+  
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+<div id="vision">
+  <div class="vision-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >JUN 06 2017</h1>
+        <h2 style="color: #333">Hyperloop One's Vision for Europe Summit: Unveiling 9 Routes Spanning the Continent as Part of its Global Challenge</h2>
+       <p>
+           <b>AMSTERDAM, June 6, 2017:</b> Executives from Hyperloop One joined European dignitaries and policymakers today at its Vision for Europe summit to discuss transforming transportation across the continent with Hyperloop. Hyperloop One's vision for Europe creates economic unification to provide better options for people living outside of economic centers and large cities; increases capacity of strategic corridors sustainably to develop city-to-city connections within commuting range, enabling a thriving, greener mega-region; and offers next generation logistics to facilitate fast, reliable and clean movement of goods.
+    </p>
+    <p>
+      With Hyperloop One, passengers and cargo are loaded into a pod and accelerated gradually via electric propulsion through a low-pressure tube. The pod quickly lifts above the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag. It is designed for higher energy efficiency per passenger mile than traditional modes of transport, curbing emissions and fuel consumption. By the end of 2017, Hyperloop One will have a team of 500 employees dedicated to bringing the technology to life.
+    </p>
+    <p>
+      Nine potential European routes were unveiled for the Hyperloop One Global Challenge at the event. The proposed routes will connect over 75 million people in 44 cities, spanning 5,000 kilometers. They were presented as part of the all-day summit that included a panel discussion around the economic advantages of Hyperloop and a keynote address from Dutch Minister of Infrastructure and the Environment, Melanie Schultz van Haegen.
+    </p>
+    <p>
+      “Europe embraces new ideas in transportation like no other region in the world and is uniquely positioned to take the next great leap in transportation with Hyperloop One,” said Shervin Pishevar, co-founder and Executive Chairman of Hyperloop One. “Our vision is to, one day, connect all of Europe with our Hyperloop One system, networking the entire continent.”
+    </p>
+    <p>
+     “For Europe, Hyperloop One technology is complementary to existing highways, rails, ports and overall infrastructure,” said Rob Lloyd, Chief Executive Officer of Hyperloop One. “Hyperloop One will offer Europe’s transport grid with an option that is more efficient, greener, on-demand and faster. We’ve seen a lot of interest here, and we look forward to creating a partnership to enhance the continent’s transport infrastructure.”
+    </p>
+    <p>
+      “Hyperloop One is the only company in the world that has built a fully functioning Hyperloop system test track,” said Hyperloop One co-founder and President of Engineering Josh Giegel. “For the last two years, our team of nearly 200 engineers, technicians and fabricators developed our technology and transformed a stretch of desert in the U.S. into a working test track that proves we can build a Hyperloop system anywhere in the world. We’re looking forward to showcasing our technology and believe that Europe is the perfect region for one of the world’s first Hyperloop systems.”
+    </p>
+  
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+<div id="america">
+  <div class="america-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >APR 06 2017</h1>
+        <h2 style="color: #333">Hyperloop One Unveils its Vision for America, Details 11 Routes as Part of Global Challenge</h2>
+       <p>
+           <b>WASHINGTON, DC. Apr. 6, 2017:</b> Executives from Hyperloop One joined leading policymakers and transportation experts here today to reveal details of select Hyperloop routes in the United States and to initiate a nationwide conversation about the future of American transportation.
+    </p>
+    <p>
+      Of more than 2,600 participants in the Hyperloop One Global Challenge, 11 teams presented routes, linking 35 cities and covering more than 2,800 miles. They join 24 other teams from around the globe, each vying to be among 12 finalists. Three eventual winners will work closely with Hyperloop One engineering and business development teams to explore project development and financing.
+    </p>
+    <p>
+      "Hyperloop One is the only company in the world building an operational commercial Hyperloop system,” said Rob Lloyd, chief executive officer of Hyperloop One. “This disruptive technology – conceived, developed and built in the U.S. – will move passengers and cargo faster, cleaner and more efficiently. It will transform transportation as we know it and create a more connected world.”
+    </p>
+    <p>
+      Lloyd said that by year’s end the company will have a team of 500 engineers, fabricators, scientists and other employees dedicated to bringing the technology to life. Hyperloop One, he said, will enable broad benefits across communities and markets, support sustainable manufacturing and supply chains, ease strain on existing infrastructure and improve the way millions live and work.
+    </p>
+    <p>
+    With Hyperloop One, passengers and cargo are loaded into a pod and accelerate gradually via electric propulsion through a low-pressure tube. The pod quickly lifts above the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag. This week, the company finalized the tube installation on its 1640-foot-long DevLoop, located in the desert outside of Las Vegas; the facility serves as an outdoor lab for its proprietary levitation, propulsion, vacuum and control technologies.
+    </p>
+    <p>
+     "The U.S. has always been a global innovation vanguard – driving advancements in computing, communication and media to rail, automobiles and aeronautics,” said Shervin Pishevar, executive chairman of Hyperloop One. “Now, with Hyperloop One, we are on the brink of the first great breakthrough in transportation technology of the 21st century, eliminating the barriers of time and distance and unlocking vast economic opportunities.”
+    </p>
+    
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+<div id="share">
+  <div class="share-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >MAR 28 2017</h1>
+        <h2 style="color: #333">Hyperloop One Shares Transformative Vision for the Future of Manufacturing</h2>
+       <p>
+           <b>UAE (28 March, 2017) :</b> Hyperloop One, the global leader in developing the world’s first operational Hyperloop, is set to empower manufacturing and its adjacent sectors with the potential for increased value creation, faster lead times and lower costs when compared to traditional alternatives. Terrific momentum has driven the project’s development, with new images recently revealed demonstrating the progress made at the DevLoop, the world’s first and only full-scale Hyperloop test track.
+    </p>
+    <p>
+      Set to have a disruptive effect on manufacturing, warehousing and supply chain distribution throughout the GCC and beyond, Hyperloop One is reinventing transportation to eliminate the barriers of distance and time. Traveling at speeds of 1080 km/h, Hyperloop will enable travel between cities in the GCC in under an hour, enabling disruption that will create new opportunities in manufacturing, warehousing and supply chain distribution.
+    </p>
+    <p>
+      Senior Vice President of Hyperloop One’s Global Operations, Nick Earle, delivered the closing key note at the Global Manufacturing and Industrialisation Summit (GMIS) in Abu Dhabi today, bringing to light the transformative effect that Hyperloop One will have on manufacturing, logistics, supply chain and warehousing. The keynote, entitled ‘Hyperloop and Manufacturing – This Changes Everything,’ highlighted the ways in which the aforementioned sectors will benefit – including increased capital due to reducing finished goods inventories by 25%, access to 10 times larger talent pools with the same commute time and saving up to 80% on real estate costs, as well as shorter lead times, reduced freight spend and slashed CO2 emissions.
+    </p>
+    <p>
+      “As the only company in the world building an operational Hyperloop system, Hyperloop One is focused on creating a new mode of transportation to move people and cargo,” said Earle. “Hyperloop One changes everything. We're committed to enabling disruption to create new opportunities in manufacturing, warehousing and supply chain distribution. Hyperloop will drive significant value for a wide range of businesses and reinvent transportation as we know it.”
+    </p>
+    <p>
+     At two thirds the cost, three times the speed and with 3.5-4 times the benefit of high speed rail, Hyperloop will have a tangible impact on current and future businesses and society. Hyperloop will transform transportation, driving value throughout the ecosystem and enabling job creation, while also empowering workers with the ability to commute quickly and easily. This, in particular, will help to provide employment opportunities to the 200 million youth that live in the Middle East and North Africa, the largest growing sector of the region’s population.
+    </p>
+    <p>
+      In the GCC, the cargo transportation market was worth approximately US$35 billion in 2016, according to McKinsey & Co. Of this, Hyperloop One has an addressable share of around US$12 billion, excluding short-haul, intra-city shipping and low-value commodity freight such as oil and chemicals, metals and minerals and agriculture and food products. Hyperloop One would compete for 100% of air freight in the GCC, which is a $7 billion market, 22% of the surface freight – which is approximately $3 billion in road and rail freight and 13% of the maritime freight, equating to roughly $2 billion.
+    </p>
+    <p>
+     “The UAE has a progressive vision for transforming its economy, and Hyperloop One plays right into that by increasing access to the region and beyond,” said Shervin Pishevar, Executive Chairman and Co-Founder of Hyperloop One. “At Hyperloop One, we’re committed to enabling disruption, and we recognize the importance of partnership in being able to realize the full potential of developing robust ecosystems that are needed to support Hyperloop’s capacity. In this sense, we’re thinking beyond the benefits that Hyperloop will offer companies; connecting the GCC with Hyperloop will enable governments to address the region’s youth bulge, by providing young jobseekers with the opportunity to explore new, exciting job prospects. As an entrepreneur myself, I can understand the value of having an accessible ecosystem.”
+  </p>
+  <p>
+    During GMIS, Hyperloop One announced the launch of the Hyperloop One Partner Program, which is designed to create mutually beneficial, structured relationships between Hyperloop One and the company’s global partners. The program will help partners build expertise in Hyperloop One solutions, increase revenue, build industry recognition and provide inside access to understand and influence Hyperloop One’s strategy. As the industry’s first partner program, it will unite an innovative partner ecosystem to make the next mode of transportation a reality.
+  </p>
+        <p>
+            Harj Dhaliwal, Senior Vice President, Parsons – a partner of Hyperloop One, said: "Hyperloop One will break down time and distance to rebalance economies and enable people, goods and services to move faster. Parsons is providing expertise and intrinsic knowledge of regional transportation requirements in support of Hyperloop One on a number of projects around the world. Hyperloop One’s progress is extraordinary and it will happen sooner than you think."
+        </p>
+        <p>
+        Held in Abu Dhabi from March 27-30, the inaugural GMIS brings together decision-making leaders from governments, businesses and civil society organizations to shape a vision for the manufacturing sector’s future.
+        </p>
+  
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+    <div id="semi">
+  <div class="semi-content" style="padding: 25; font-family: 'Abel', sans-serif;">
+    <div class="copy">
+        <h1 class="head-style-2" >FEB 28 2017</h1>
+        <h2 style="color: #333">Hyperloop One and Indian Government Officials Lead First-Ever Summit to Discuss India’s Most Promising Hyperloop Routes</h2>
+       <p>
+           <b>New Delhi, India, February 28, 2017 :</b> Hyperloop One, the global leader in developing the world’s first operational Hyperloop, convened a landmark innovation summit – The Hyperloop One Vision For India in New Delhi today. The summit, which was graced by Shri Suresh Prabhu, Hon’ble Minister of Railways and Shri Amitabh Kant, CEO, NITI Aayog, discussed how Hyperloop One can integrate with and augment India’s vast transport network with reliable, clean, and on-demand autonomous transport, connecting India’s major cities at faster-than-airline speeds. Hyperloop can reinvent and transform transportation in India, making the nation a global leader in innovation, efficiency, and regional economic growth.
+    </p>
+    <p>
+      The Hyperloop concept has generated excitement and interest from start-ups around the world since it was first proposed in 2013. While other start-ups have not yet moved beyond basic research, Hyperloop One is the only company that is building a functional Hyperloop system. Following the successful public demonstration of the propulsion motor in May 2016 Hyperloop One is on track to run the world’s first full-system test in 2017 in Nevada
+    </p>
+    <p>
+      “Prime Minister Narendra Modi’s vision for transforming India and the role he sees of technology in driving this change is indeed remarkable,” said Shervin Pishevar, Executive Chairman of Hyperloop One. “India is an extremely important geography for developing Hyperloop networks and reimagining how cities and regions work. The Prime Minister’s vision of connecting the country is directly aligned with Hyperloop One’s objective of connecting the world. With initiatives such as ‘Make In India’ and ‘Digital India’, we do see ourselves working in this direction in India.”
+    </p>
+    <p>
+      “Hyperloop One will help accelerate India’s growth towards building substantial infrastructure that is both financially and environmentally sustainable,” said Rob Lloyd, CEO of Hyperloop One. “A transportation system like the Hyperloop will undoubtedly ease the pressure on existing infrastructure while enhancing the quality of life of the people. We are already working with the governments around the world on passenger and freight projects, and we look forward to also partnering with India to support this endeavour.”
+    </p>
+    <p>
+     The Hyperloop One Vision For India summit also showcased five Hyperloop One Global Challenge (HOGC) semi-finalist teams from India, each of which proposed high-speed transportation routes that could improve the lives of millions of Indian citizens. The HOGC required the teams to develop regional proposals integrating Hyperloop One's disruptive transport technology to move passengers and freight from point-to-point, swiftly, and on-demand.
+    </p>
+    <p>
+      The HOGC which was kicked off in May 2016 invited teams across the world to put forward a comprehensive and commercially viable transport plan covering economical and policy aspects of their respective cities, regions and countries. The HOGC received more than 2,600 registrants from 90 countries, and narrowed the field down to 35 semi-finalists across all continents with a potential pipeline worth $26 billion. India led the way with the highest number of registrants and had the most vocal supporters of Hyperloop One on social media. The India semi-finalists include:
+    </p>
+    <p>
+     <ul>
+        <li>AECOM - Bengaluru-to-Chennai: 334 km in 20 minutes. Meeting the demand of a passenger and freight super-corridor growing at 15% a year.</li>
+        <li>LUX Hyperloop Network - Bengaluru-to-Thiruvananthapuram: 736 km in 41 minutes. Connects two major ports in southern India with population centres of Coimbatore and Kochi.</li>
+        <li>Dinclix GroundWorks - Delhi-to-Mumbai via Jaipur and Indore: 1,317 km in 55 minutes. Freight and passengers. Connects two megacities and creates seaport access for landlocked intermediary cities in the interior.</li>
+         <li>Hyperloop India - Mumbai-to-Chennai via Bengaluru: 1,102 km. 50 minutes. Phased development for freight and passengers. Boosts capacity at ports of Mumbai and Chennai, creates a Suez Canal-like link between India’s coasts.</li>
+         <li>Infi-Alpha - Bengaluru to Chennai: 334 km in 20 minutes. Meeting the demand of a passenger and freight super-corridor growing at 15% a year. Connects with major airports.</li>
+        </ul>
+  </p>
+  
+  
+      <a href="#">Close</a> </div>
+  </div>
+  <div class="overlay" style="background-color: #000; background: rgba(0,0,0,.8);  height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 10"></div>
+</div>
+
+<div id="footer" style="background-color: #E1DEDE; width: 100%;  border-top: 1px solid #ddd; margin-top: 50px;">
+  <center>
+
+<p style="font-family: 'Abel', sans-serif; color: #333; margin: 0; padding: 15px;font-size: 14px; border-top: 1px solid #ccc;">Copyright Hyperloop-One 2017</p></center>
+</div>
+	</body>
+
+	</html>
